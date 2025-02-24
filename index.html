@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reconquista</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vídeo Romântico</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8e0e0;
+            color: #ff4d4d;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .video-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <button class="romantic-btn" onclick="location.href='segunda_pagina.html'">Clique aqui, Amanda</button>
+    <h1>Você sabia que 80% da populacao mundial tem olhos castanhos? Mas os seus são meus favoritos</h1>
+    <div class="video-container">
+        <video id="romanticVideo" autoplay muted>
+            <source src="0221.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
     </div>
+    <script>
+        document.getElementById('romanticVideo').addEventListener('ended', function() {
+            window.location.href = 'index2.html';
+        });
+    </script>
 </body>
 </html>
