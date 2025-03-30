@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo Romântico</title>
+    <title>Imagem Romântica</title>
     <style>
         body {
             margin: 0;
@@ -16,17 +16,17 @@
             background-color: #f8e0e0;
             color: #ff4d4d;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         h1 {
             margin-bottom: 20px;
-            text-align: center;
         }
-        .video-container {
+        .image-container {
             position: relative;
             width: 80%;
             max-width: 800px;
         }
-        video {
+        img {
             width: 100%;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -34,17 +34,14 @@
     </style>
 </head>
 <body>
-    <h1>Você sabia que 80% da populacao mundial tem olhos castanhos? Mas os seus são meus favoritos</h1>
-    <div class="video-container">
-        <video id="romanticVideo" autoplay muted>
-            <source src="0221.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos HTML5.
-        </video>
+    <h1>Você sabia que 80% da população mundial tem olhos castanhos? Mas os seus são meus favoritos</h1>
+    <div class="image-container">
+        <img src="WhatsApp Image 2025-03-30 at 18.39.57.jpeg" alt="Imagem Romântica">
     </div>
     <script>
-        document.getElementById('romanticVideo').addEventListener('ended', function() {
+        setTimeout(function() {
             window.location.href = 'primeira_pagina.html';
-        });
+        }, 10000); // Redireciona após 10 segundos
     </script>
 </body>
 </html>
